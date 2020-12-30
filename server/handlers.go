@@ -13,6 +13,6 @@ func (app *application) ping(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
-	fmt.Fprint(w, `{"message":"pongz"}`)
+	fmt.Fprint(w, `{"message":"poop"}`)
 	//json.NewEncoder(w).Encode({"message":"pingz"})
 }
