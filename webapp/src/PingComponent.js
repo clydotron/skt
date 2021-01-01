@@ -11,7 +11,7 @@ const PingComponent = (props) => {
             setServerResponse(resp.data.message);
         })
         .catch(resp => console.log(resp))
-    })
+    },[])
 
     return (
         <h1>ping {serverResponse}</h1>
