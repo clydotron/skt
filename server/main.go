@@ -13,6 +13,7 @@ type application struct {
 func main() {
 
 	port := os.Getenv("PORT")
+	fmt.Println("env PORT =", port)
 	if port == "" {
 		addr := flag.String("addr", ":8080", "HTTP network address")
 		port = *addr
